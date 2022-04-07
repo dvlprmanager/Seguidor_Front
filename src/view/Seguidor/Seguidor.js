@@ -46,9 +46,6 @@ const Seguidor = () => {
 
   return (
     <div className="containerseguidor">
-      <CardTitle>
-        
-      </CardTitle>
       <Container>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Row>

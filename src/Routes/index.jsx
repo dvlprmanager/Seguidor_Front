@@ -15,7 +15,7 @@ const Index = () =>{
     const cookies = new Cookies();
     return (
       
-        <Router>
+        <Router basename="/Seguidor_Front">
 
             {cookies.get('id') && <Nav/>}
             
@@ -25,6 +25,7 @@ const Index = () =>{
                 <Route exact path="/private/pedidos"  element={<Pedidos/>}/>
                 <Route exact path="/login" element={<Login/>}/>
                 <Route path="/" element={<Login/>}/>
+                <Route path="/Seguidor_Front" element={<Login/>}></Route>
                 <Route path="/seguidor"  element={<Seguidor/>}/>
             </Routes>
         </Router>
